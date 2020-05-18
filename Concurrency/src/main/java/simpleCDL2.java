@@ -5,7 +5,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
-// https://www.baeldung.com/java-count  down-latch
+// https://www.baeldung.com/java-countdown-latch
 public class  simpleCDL2 {
 
     public static void main(String[] args) throws InterruptedException {
