@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="70db9bc8-33a8-4df0-8617-83eec2a069a1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/src/main/java">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jUnitTests" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jUnitTests" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1brXMgjUACEnq9zzB9kYTAFPzrC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3093093" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.JUnit">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="jUnitTests.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jUnitTests" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JUnit" type="JUnit" factoryName="JUnit">
+      <module name="jUnitTests.test" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPrimer" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="Gradle.jUnitTests" />
+      <item itemvalue="JUnit.JUnit" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70db9bc8-33a8-4df0-8617-83eec2a069a1" name="Default Changelist" comment="" />
+      <created>1589391139443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589391139443</updated>
+      <workItem from="1589391146850" duration="5133000" />
+      <workItem from="1589470524606" duration="568000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="294" y="75" width="784" height="648" key="#Project_Structure" timestamp="1589394129334">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="294" y="75" width="784" height="648" key="#Project_Structure/0.23.1366.745@0.23.1366.745" timestamp="1589394129334" />
+    <state x="232" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589471036160">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="232" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1366.745@0.23.1366.745" timestamp="1589471036160" />
+    <state x="461" y="275" width="443" height="248" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589470671218">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="461" y="275" width="443" height="248" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1366.745@0.23.1366.745" timestamp="1589470671218" />
+    <state x="493" y="210" key="FileChooserDialogImpl" timestamp="1589392559537">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="493" y="210" key="FileChooserDialogImpl/0.23.1366.745@0.23.1366.745" timestamp="1589392559537" />
+    <state width="1322" height="38" key="GridCell.Tab.0.bottom" timestamp="1589471096575">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="38" key="GridCell.Tab.0.bottom/0.23.1366.745@0.23.1366.745" timestamp="1589471096575" />
+    <state width="1322" height="38" key="GridCell.Tab.0.center" timestamp="1589471096575">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="38" key="GridCell.Tab.0.center/0.23.1366.745@0.23.1366.745" timestamp="1589471096575" />
+    <state width="1322" height="38" key="GridCell.Tab.0.left" timestamp="1589471096574">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="38" key="GridCell.Tab.0.left/0.23.1366.745@0.23.1366.745" timestamp="1589471096574" />
+    <state width="1322" height="38" key="GridCell.Tab.0.right" timestamp="1589471096575">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="38" key="GridCell.Tab.0.right/0.23.1366.745@0.23.1366.745" timestamp="1589471096575" />
+    <state x="286" y="75" width="803" height="562" key="SettingsEditor" timestamp="1589470962804">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="286" y="75" width="803" height="562" key="SettingsEditor/0.23.1366.745@0.23.1366.745" timestamp="1589470962804" />
+    <state x="465" y="190" width="425" height="425" key="chooseDestDirectoryDialog" timestamp="1589470666915">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="465" y="190" width="425" height="425" key="chooseDestDirectoryDialog/0.23.1366.745@0.23.1366.745" timestamp="1589470666915" />
+    <state x="29" y="23" width="1298" height="745" key="new project wizard" timestamp="1589471093836">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="29" y="23" width="1298" height="745" key="new project wizard/0.23.1366.745@0.23.1366.745" timestamp="1589471093836" />
+  </component>
+</project>
