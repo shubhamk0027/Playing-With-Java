@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97e28839-2257-4444-a1c9-4500364a6642" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Translator" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bqOGqgFDt45aAgdGNCQnooHeQQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="findjar.last.used.dir" value="$USER_HOME$/ideaIU/Libraries" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ideaIU/Libraries/junit-4.10.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3093093" />
+  </component>
+  <component name="RunManager" selected="Application.TestRunner">
+    <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestRunner" />
+      <module name="Translator.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Translator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Translator" />
+      <module name="Translator.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestRunner" />
+        <item itemvalue="Application.Translator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97e28839-2257-4444-a1c9-4500364a6642" name="Default Changelist" comment="" />
+      <created>1589356063072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589356063072</updated>
+      <workItem from="1589356065924" duration="7184000" />
+      <workItem from="1589367828419" duration="1595000" />
+      <workItem from="1589373121321" duration="340000" />
+      <workItem from="1589373948903" duration="601000" />
+      <workItem from="1589391051268" duration="86000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="294" y="75" width="784" height="648" key="#Project_Structure" timestamp="1589368544370">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="294" y="75" width="784" height="648" key="#Project_Structure/0.23.1366.745@0.23.1366.745" timestamp="1589368544370" />
+    <state x="145" y="60" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589363190481">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="145" y="60" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1366.745@0.23.1366.745" timestamp="1589363190481" />
+    <state x="413" y="208" width="529" height="381" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589368836352">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="413" y="208" width="529" height="381" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1366.745@0.23.1366.745" timestamp="1589368836352" />
+    <state x="462" y="241" width="394" height="331" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589363176415">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="462" y="241" width="394" height="331" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1366.745@0.23.1366.745" timestamp="1589363176415" />
+    <state x="493" y="197" width="657" height="403" key="FileChooserDialogImpl" timestamp="1589369389572">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="493" y="197" width="657" height="403" key="FileChooserDialogImpl/0.23.1366.745@0.23.1366.745" timestamp="1589369389572" />
+    <state width="1322" height="51" key="GridCell.Tab.0.bottom" timestamp="1589369427141">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="51" key="GridCell.Tab.0.bottom/0.23.1366.745@0.23.1366.745" timestamp="1589369427141" />
+    <state width="1322" height="51" key="GridCell.Tab.0.center" timestamp="1589369427140">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="51" key="GridCell.Tab.0.center/0.23.1366.745@0.23.1366.745" timestamp="1589369427140" />
+    <state width="1322" height="51" key="GridCell.Tab.0.left" timestamp="1589369427140">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="51" key="GridCell.Tab.0.left/0.23.1366.745@0.23.1366.745" timestamp="1589369427140" />
+    <state width="1322" height="51" key="GridCell.Tab.0.right" timestamp="1589369427141">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="51" key="GridCell.Tab.0.right/0.23.1366.745@0.23.1366.745" timestamp="1589369427141" />
+    <state x="286" y="75" width="784" height="648" key="SettingsEditor" timestamp="1589368397544">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="286" y="75" width="784" height="648" key="SettingsEditor/0.23.1366.745@0.23.1366.745" timestamp="1589368397544" />
+    <state x="29" y="23" width="1298" height="745" key="new project wizard" timestamp="1589391139234">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="29" y="23" width="1298" height="745" key="new project wizard/0.23.1366.745@0.23.1366.745" timestamp="1589391139234" />
+  </component>
+</project>
