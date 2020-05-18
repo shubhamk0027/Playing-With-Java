@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36afe14c-faa2-4b1d-917d-44b7a730cc19" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bgXi2Gfal1Rq6VRp8MYlG7ns5l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ideaIU/Libraries/twitter4j-4.0.7/lib/twitter4j-core-4.0.7.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.23631124" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="scrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="scrapper" />
+      <module name="Twitter Scrapper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.scrapper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36afe14c-faa2-4b1d-917d-44b7a730cc19" name="Default Changelist" comment="" />
+      <created>1589054833544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589054833544</updated>
+      <workItem from="1589054837760" duration="4788000" />
+      <workItem from="1589186422299" duration="705000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="294" y="75" width="815" height="648" key="#Project_Structure" timestamp="1589054982012">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="294" y="75" width="815" height="648" key="#Project_Structure/0.23.1366.745@0.23.1366.745" timestamp="1589054982012" />
+    <state x="636" y="286" width="440" height="233" key="DetectedRootsChooserDialog" timestamp="1589186533015">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="636" y="286" width="440" height="233" key="DetectedRootsChooserDialog/0.23.1366.745@0.23.1366.745" timestamp="1589186533015" />
+    <state x="389" y="202" width="657" height="401" key="FileChooserDialogImpl" timestamp="1589186659108">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="389" y="202" width="657" height="401" key="FileChooserDialogImpl/0.23.1366.745@0.23.1366.745" timestamp="1589186659108" />
+    <state width="1322" height="396" key="GridCell.Tab.0.bottom" timestamp="1589187150155">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="396" key="GridCell.Tab.0.bottom/0.23.1366.745@0.23.1366.745" timestamp="1589187150155" />
+    <state width="1322" height="396" key="GridCell.Tab.0.center" timestamp="1589187150153">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="396" key="GridCell.Tab.0.center/0.23.1366.745@0.23.1366.745" timestamp="1589187150153" />
+    <state width="1322" height="396" key="GridCell.Tab.0.left" timestamp="1589187150151">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="396" key="GridCell.Tab.0.left/0.23.1366.745@0.23.1366.745" timestamp="1589187150151" />
+    <state width="1322" height="396" key="GridCell.Tab.0.right" timestamp="1589187150154">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state width="1322" height="396" key="GridCell.Tab.0.right/0.23.1366.745@0.23.1366.745" timestamp="1589187150154" />
+    <state x="452" y="118" width="818" height="562" key="SettingsEditor" timestamp="1589186667676">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="452" y="118" width="818" height="562" key="SettingsEditor/0.23.1366.745@0.23.1366.745" timestamp="1589186667676" />
+    <state x="550" y="303" width="611" height="198" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589057845330">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="550" y="303" width="611" height="198" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1366.745@0.23.1366.745" timestamp="1589057845330" />
+    <state x="429" y="185" key="search.everywhere.popup" timestamp="1589187024048">
+      <screen x="0" y="23" width="1366" height="745" />
+    </state>
+    <state x="429" y="185" key="search.everywhere.popup/0.23.1366.745@0.23.1366.745" timestamp="1589187024048" />
+  </component>
+</project>
