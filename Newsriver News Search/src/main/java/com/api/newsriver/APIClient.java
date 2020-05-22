@@ -13,7 +13,7 @@ import java.net.http.HttpResponse;
 public class APIClient {
 
         private static final HttpClient httpClient= HttpClient.newBuilder().version(HttpClient.Version.HTTP_2).build();
-        private static final String KEY= "sBBqsGXiYgF0Db5OV5tAw7dp-iJhOfRzH26dz4CLNl8JkSYgwl8l_EKKUGmR73Gen2pHZrSf1gT2PUujH1YaQA";
+        private static final String KEY= "GET YOUR OWN KEY!";
         private static final String mainURL="https://api.newsriver.io/v2/search";
 
         private static URI buildURL(APIQuery apiQuery) throws URISyntaxException {
