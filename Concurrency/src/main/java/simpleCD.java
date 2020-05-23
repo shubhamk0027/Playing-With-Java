@@ -9,20 +9,16 @@ import static java.util.stream.Collectors.toList;
 public class simpleCD {
 
     public static void main(String[] args) throws InterruptedException {
-
         int numThreads=5;
         List<String> outScraper= Collections.synchronizedList(new ArrayList<>());   // A common sync list
         CountDownLatch countDownLatch= new CountDownLatch(numThreads);              // A common latch
 
-        // A list of thread, not a list of runnable class!
-        // -> not  =>!
         List<Thread> workerThreads =  Stream
                 .generate( () -> new Thread(new Worker(outScraper,countDownLatch)))
                 .limit(numThreads)
                 .collect(toList());
 
-        workerThreads.forEach(Thread::start); // passed an anonymous function!
-
+        workerThreads.forEach(Thread::start);
         try {
             countDownLatch.await();
         } catch (InterruptedException e) {
@@ -32,11 +28,5 @@ public class simpleCD {
         // await guarantees that all the 5 threads are executed before running this!
         Thread.sleep(2000);
         System.out.println("All tasks have finished..");
-
-/*
-        for(String x : outScraper){
-            System.out.println(x);
-        }
-*/
     }
 }
