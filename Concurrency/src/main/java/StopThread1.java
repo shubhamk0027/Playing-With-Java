@@ -12,7 +12,6 @@ public class StopThread1 {
             System.out.println("Thread Closed");
         });
         backgroundThread.start();
-        // It works on my machine! But not guranteed!
         TimeUnit.SECONDS.sleep(2);
         stopRequested = true;
     }
