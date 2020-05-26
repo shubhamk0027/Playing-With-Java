@@ -8,6 +8,7 @@ import org.apache.lucene.util.ThreadInterruptedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -28,18 +29,7 @@ public class NewsProducer implements Runnable{
     private APIClient apiClient;
     private APIQuery apiQuery;
 
-/*
-    static PrintWriter printer;
-    static {
-        try {
-            printer = new PrintWriter("output.txt");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-*/
-
-    private static final String Topic = "test";
+    private final String Topic;
     private static final Logger logger = LoggerFactory.getLogger(NewsProducer.class);
     private static Properties props = new Properties();
     private static ObjectMapper mapper = new ObjectMapper();
@@ -58,7 +48,8 @@ public class NewsProducer implements Runnable{
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
     }
 
-    NewsProducer(APIClient apiClient){
+    NewsProducer(APIClient apiClient,@Value("${TOPIC}") String topic){
+        this.Topic=topic;
         this.apiClient=apiClient;
         producer = new KafkaProducer<>(props);
     }
@@ -84,15 +75,14 @@ public class NewsProducer implements Runnable{
         producer.send(record, new Callback() {
             @Override
             public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-                if(e==null) {                     // Message Sent Successfully
+                if(e==null) {
                     logger.info("Sent to Kafka: "+
                             " Topic: "+record.topic() +
                             " Value "+record.value()+
                             " Key " +record.key() +
                             " Partition: "+recordMetadata.partition()+
                             " Offset: "+recordMetadata.offset()+
-                            " TimeStamp: "+recordMetadata.timestamp()
-                    );
+                            " TimeStamp: "+recordMetadata.timestamp());
                 }else { logger.error("Error while sending message",e); }
             }
         });
@@ -107,20 +97,15 @@ public class NewsProducer implements Runnable{
         long id = Thread.currentThread().getId();
         try {
             while(from.compareTo(to) < 1 && currCalls < maxCalls) {
-
                 apiQuery.setLuceneQuery(queryString + " AND discoverDate:[" + from.toString() + " TO " + to.toString() + "]");
                 logger.info("PRODUCER " + id + " SENT QUERY " + apiQuery.getLuceneQuery());
-
                 HttpResponse <String> response = apiClient.fetch(apiQuery);
                 logger.info("PRODUCER " + id + " STATUS CODE: " + response.statusCode() + " MSG: " + response.body());
-                // printer.println(response.body());
-
                 List <APIResponse> res = mapper.readValue(response.body(), new TypeReference <List <APIResponse>>() {});
                 for(APIResponse obj : res) {
                     ProducerRecord <String, String> record = new ProducerRecord <>(Topic, obj.id, mapper.writeValueAsString(obj));
                     sendWithCallback(record);
                 }
-
                 try{
                     from = Instant.parse(res.get(res.size() - 1).discoverDate);
                     from.plus(Duration.ofSeconds(1));
@@ -128,14 +113,12 @@ public class NewsProducer implements Runnable{
                     // Just Increasing by some number to get valid data in next call
                     from.plus(Duration.ofSeconds(10));
                 }
-
                 currCalls++;
                 logger.info("PRODUCER "+id+" MADE "+currCalls+" CALLS, NEXT TIME FRAME FROM "+from.toString()+" TO "+to.toString().toString());
             }
         } catch(Exception exception) {
-            // printer.close();
-            exception.printStackTrace();
             logger.info("SHUTTING DOWN THE PRODUCER, " + currCalls + " CALLS MADE");
+            exception.printStackTrace();
             producer.close();
         }
     }

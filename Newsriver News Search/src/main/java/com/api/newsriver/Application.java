@@ -1,4 +1,6 @@
 package com.api.newsriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,21 +12,36 @@ import org.springframework.context.annotation.Bean;
 public class Application {
 
 	private final Controller controller;
-	public Application(Controller controller,@Value("${TOPIC}") String topic) {
-		System.out.println(topic);
+	private final ElasticsearchClient esClient;
+	private static final Logger logger = LoggerFactory.getLogger(Application.class);
+
+	public Application(Controller controller, ElasticsearchClient esClient, @Value("${TOPIC}") String topic) {
+		this.esClient=esClient;
 		this.controller = controller;
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(Application.class);
 	}
 
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx){
 		return args -> {
+
 			// across M Producers X N consumers with max 20 calls to Newsriver in total
 			controller.produce("cyclone",3,3);
 			controller.consume(3);
+
+			/*String jsonString ="{\"id\":\"id1\","+
+					"\"discoverDate\":\"2020-05-24T10:35:34.688+0000\","+
+					"\"title\":\"JSON Pretty\","+
+					"\"text\":\"Way back in January\","+
+					"\"url\":\"https://www.twincities.com\","+
+					"\"score\":8.394664}";
+
+			logger.info("Adding to ES: "+ jsonString);
+			esClient.add("news",jsonString);*/
+
 		};
 	}
 

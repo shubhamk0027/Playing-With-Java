@@ -1,7 +1,5 @@
 package com.api.newsriver;
-
 import java.util.ArrayList;
-
 public class APIResponse {
     // for parsing make sure it is public!
     public String id;
@@ -9,7 +7,9 @@ public class APIResponse {
     public String title;
     public String text;
     public String url;
+    public Double score;
 
+/*
     static class Element{
         public String type;
         public String primary;
@@ -20,8 +20,9 @@ public class APIResponse {
         public String alternative;
     }
     public ArrayList<Element> elements;
+*/
 
-    static class Website{
+/*    static class Website{
         public String name;
         public String hostName;
         public String domainName;
@@ -38,8 +39,6 @@ public class APIResponse {
         }
         public ReadTime readtime;
     }
-
-    public Metadata metadata;
-    public String highlight;
-    public Double score;
+        public Metadata metadata;
+*/
 }

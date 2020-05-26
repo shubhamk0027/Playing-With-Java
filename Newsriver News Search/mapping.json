@@ -1,0 +1,28 @@
+{
+    "properties" : {
+      "id" : {
+        "type": "text"
+      },
+      "number": {
+        "type": "long"
+      },
+      "discoverDate" : {
+        "type" : "date"
+      },
+      "title" : {
+        "type": "text"
+      },
+      "text" : {
+        "type" : "text"
+      },
+      "url" : {
+        "type": "text"
+      },
+      "score" : {
+        "type" : "float"
+      }
+    }
+}
+
+
+

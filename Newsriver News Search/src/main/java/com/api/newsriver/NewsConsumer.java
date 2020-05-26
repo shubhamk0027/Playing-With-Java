@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
+import org.springframework.jmx.export.naming.IdentityNamingStrategy;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -28,6 +29,7 @@ public class NewsConsumer implements Runnable{
     private KafkaConsumer <String, String> consumer;
     private static final Logger logger = LoggerFactory.getLogger(NewsConsumer.class);
     private static Properties props = new Properties();
+    private Controller controller;
 
     static {
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
@@ -37,7 +39,8 @@ public class NewsConsumer implements Runnable{
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"latest");
     }
 
-    NewsConsumer(ElasticsearchClient elasticsearchClient, @Value("${TOPIC}") String topic){
+    NewsConsumer(ElasticsearchClient elasticsearchClient, Controller controller, @Value("${TOPIC}") String topic){
+        this.controller=controller;
         this.elasticsearchClient = elasticsearchClient;
         this.topic=topic;
         consumer= new KafkaConsumer <>(props);
@@ -54,7 +57,11 @@ public class NewsConsumer implements Runnable{
                 ConsumerRecords <String,String> records = consumer.poll(Duration.ofMillis(100));
                 for(ConsumerRecord <String,String> record: records){
                     logger.info("CONSUMED BY "+Thread.currentThread().getId()+" KEY: "+record.key());
-                    elasticsearchClient.add(topic,record.value());
+                    String json = record.value();
+                    int count = controller.getCount();
+                    json="{\"number\":"+ Integer.toString(count)+","+json.substring(1);
+                    logger.info(json);
+                    elasticsearchClient.add(topic,json);
                 }
             }
         }catch (WakeupException | IOException | ThreadInterruptedException e) {

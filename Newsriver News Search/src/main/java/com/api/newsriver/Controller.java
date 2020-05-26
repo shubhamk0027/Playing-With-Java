@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.security.InvalidParameterException;
 import java.time.Duration;
@@ -14,17 +14,20 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Component
+@Service
 public class Controller {
 
     private final ElasticsearchClient elasticsearchClient;
     private final ObjectFactory<NewsConsumer> newsConsumerFactory;
     private final ObjectFactory<NewsProducer> newsProducerFactory;
     private static final Logger logger = LoggerFactory.getLogger(Application.class);
+    private Integer count;
 
     Controller(ElasticsearchClient elasticsearchClient,
                ObjectFactory<NewsConsumer> newsConsumerFactory,
-               ObjectFactory<NewsProducer> newsProducerFactory){
+               ObjectFactory<NewsProducer> newsProducerFactory,
+               @Value("${COUNTER}") int counter){
+        this.count=counter;
         this.elasticsearchClient = elasticsearchClient;
         this.newsConsumerFactory= newsConsumerFactory;
         this.newsProducerFactory= newsProducerFactory;
@@ -35,6 +38,15 @@ public class Controller {
         for(int i=0;i<nConsumers;i++){
             threadPool.execute(newsConsumerFactory.getObject());
         }
+    }
+
+    public int getCount(){
+        int x;
+        synchronized (count){
+            count++;
+            x=count.intValue();
+        }
+        return x;
     }
 
     public void produce(String queryString,int lastXdays, int nThreads){
