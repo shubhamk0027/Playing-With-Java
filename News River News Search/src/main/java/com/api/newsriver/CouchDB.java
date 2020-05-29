@@ -15,7 +15,7 @@ import java.net.http.HttpResponse;
 public class CouchDB {
 
     private final HttpClient httpClient = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2).build();
-    private static final Logger logger = LoggerFactory.getLogger(NewsConsumer.class);
+    private static final Logger logger = LoggerFactory.getLogger(CouchDB.class);
     String baseUrl = "http://shubham:fakepassword@127.0.0.1:5984/"; // local database
 
     private CouchDB(@Value("${TOPIC}") String topic){
@@ -25,9 +25,8 @@ public class CouchDB {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
             logger.info(response.body());
         }catch(URISyntaxException | IOException | InterruptedException e){
-            logger.error("Couldn't connect to the client");
+            logger.error("FAILED connect to the client");
         }
-        get("newsriver","key");
     }
 
 
